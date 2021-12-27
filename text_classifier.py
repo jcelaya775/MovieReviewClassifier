@@ -105,7 +105,7 @@ def review_encode(s):
 model = keras.models.load_model("model.h5")
 
 # with keyword closes file automatically after code block
-with open("test.txt", encoding="utf-8") as f:
+with open("myreview.txt", encoding="utf-8") as f:
     for line in f.readlines():
         # clean text
         nline = line.replace(",", "").replace(".", "").replace(
